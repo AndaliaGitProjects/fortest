@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style/Style.css">
     <title>Smart_School</title>
     <link rel="shortcut icon" href="assist/Icon Without Frame/PNG/White Icon_2.png" type="image/x-icon">
-    <script src="scripts/js.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +21,7 @@
     <main class="main grid-center">
         <div class="grid-center round-border border-pr-100" id="scroll-con">
             <a aria-label="smart-school" href="#"><img src="assist/Horizontal/JPG/min.jpg" width="350" class="logo" alt=""></a>
-            <h1 class="fs-header fw-bloder text-pr-300">Download Application</h1>
+            <h1 class="fw-bloder fs-header text-pr-300 text-center">Download Application</h1>
             <div class="btn-group">
                 <a class="fs-button round-border bg-pr-300 text-white " aria-label="dob" id="as"  data-type="button"  href="#">
                     <svg class="u-svg-content" fill="white" viewBox="0 0 512 512" x="0px" y="0px" style="width:24px;"><g><path d="M185.255,512c-76.201-0.439-139.233-155.991-139.233-235.21c0-129.404,97.075-157.734,134.487-157.734   c16.86,0,34.863,6.621,50.742,12.48c11.104,4.087,22.588,8.306,28.975,8.306c3.823,0,12.832-3.589,20.786-6.738   c16.963-6.753,38.071-15.146,62.651-15.146c0.044,0,0.103,0,0.146,0c18.354,0,74.004,4.028,107.461,54.272l7.837,11.777   l-11.279,8.511c-16.113,12.158-45.513,34.336-45.513,78.267c0,52.031,33.296,72.041,49.292,81.665   c7.061,4.248,14.37,8.628,14.37,18.208c0,6.255-49.922,140.566-122.417,140.566c-17.739,0-30.278-5.332-41.338-10.034   c-11.191-4.761-20.845-8.862-36.797-8.862c-8.086,0-18.311,3.823-29.136,7.881C221.496,505.73,204.752,512,185.753,512H185.255z"></path><path d="M351.343,0c1.888,68.076-46.797,115.304-95.425,112.342C247.905,58.015,304.54,0,351.343,0z"></path>
@@ -65,15 +64,15 @@
         }
         auto()
         
-        const scrollTranformation = function(){
-            document.onscroll = function(e){
-                if(document.body.scrollTop > 10)
-                    document.getElementById('header').style.backgroundColor='#514fcfbe';
-                else
-                    document.getElementById('header').style.backgroundColor='#07194B';
-                }
-        
-        }();
+    //    const scrollTranformation = function(){
+    //        document.onscroll = function(e){
+    //            if(document.body.scrollTop > 10)
+    //                document.getElementById('header').style.backgroundColor='#514fcfbe';
+    //            else
+    //                document.getElementById('header').style.backgroundColor='#07194B';
+    //            }
+    //    
+    //    }();
         
         const scrollContainer = function(){
             document.getElementById('scroll-con').style.translate='0 0';

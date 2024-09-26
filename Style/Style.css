@@ -4,28 +4,30 @@ THE SITE IS WORKING ON SCREEN WIDTH 250PX AND MORE
 /* Site Setup */
 :root{
     --cl-netrual-100:#FFFFFF;
+    --cl-netrual-500:rgb(128,128,128);
     --cl-natrual-900:#000000;
 
-    --cl-primary-100:#514fcfbe; /* Blue */
+    --cl-primary-100:#07194B; /* Blue */
     --cl-primary-200:#27EABB; /* Turquoise */
     --cl-primary-300:#07194B; /* Downriver */
 
     --cl-secondary-100:#FE8A46; /* Coral */
     --cl-secondary-200:#FF4949; /* SunsetOrange */
+    --cl-secondary-300:#4E4BFF; /* Blue */
 
-    --cl-gp:color-mix(in srgb, #514fcfbe 50%, lightgreen);
-    --cl-ap:color-mix(in srgb, #514fcfbe 50%, green);
-    --cl-as:color-mix(in srgb, #514fcfbe 50%, gray);
-    --cl-di:color-mix(in srgb, #07194B 50%, black);
+    --cl-gp:color-mix(in srgb, var(--cl-primary-300) 50%, var(--cl-secondary-100));
+    --cl-ap:color-mix(in srgb, var(--cl-primary-300) 50%, var(--cl-secondary-200));
+    --cl-as:color-mix(in srgb, var(--cl-primary-300) 50%, var(--cl-netrual-500));
+    --cl-di:color-mix(in srgb, #07194B 50%, var(--cl-natrual-900));
 
-    --fs-button:1.8rem;
+    --fs-button:1.6rem;
     --fs-header:clamp(1rem, 7vw ,2.7rem);
 
-    --ff-main: "Be Vietnam Pro", sans-serif;
+    --ff-main: "IBM Plex Sans Arabic", sans-serif;
 
     --fw-normal:300;
     --fw-bold:400;
-    --fw-bolder:700;
+    --fw-bolder:600;
 }
 
 @media  (30rem <= width<=50em) {
@@ -57,7 +59,7 @@ a[data-type='button']:focus{
     color: var(--cl-netrual-100);
 }
 a[data-type='button']:hover{
-    background-color: var(--cl-primary-100);
+    background-color: var(--cl-primary-300);
     transition: all 0.5s;
 }
 
@@ -134,8 +136,11 @@ img,svg,video,image{
 .fw-bold{
     font-weight: var(--fw-bold);
 }
-.fw-bolder{
+.fw-bloder{
     font-weight: var(--fw-bolder);
+}
+.text-center{
+    align-items: center;
 }
 
 
@@ -161,7 +166,7 @@ header{
 }
 
 .main{
-    background:linear-gradient(var(--cl-netrual-100) 50%, var(--cl-primary-100) 50%);
+    background:linear-gradient(var(--cl-netrual-100) 50%, var(--cl-primary-300) 50%);
     min-height: 90vh;
     /* padding-block: 2rem; */
 }
@@ -263,5 +268,11 @@ a#gp:hover{
     position: relative;
     translate:0 -100px;
     opacity: 0.5;
-    transition: all 1.5s;
+    transition: translate opacity 1.5s;
 ;}
+
+footer a{
+    text-decoration: none;
+    color: var(--cl-primary-200);
+    font-size: 1.2rem;
+}
