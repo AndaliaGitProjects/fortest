@@ -15,10 +15,10 @@ THE SITE IS WORKING ON SCREEN WIDTH 250PX AND MORE
     --cl-secondary-200:#FF4949; /* SunsetOrange */
     --cl-secondary-300:#4E4BFF; /* Blue */
 
-    --cl-gp:color-mix(in srgb, var(--cl-primary-300) 50%, var(--cl-secondary-100));
-    --cl-ap:color-mix(in srgb, var(--cl-primary-300) 50%, var(--cl-secondary-200));
-    --cl-as:color-mix(in srgb, var(--cl-primary-300) 50%, var(--cl-netrual-500));
-    --cl-di:color-mix(in srgb, #07194B 50%, var(--cl-natrual-900));
+    --cl-gp:var(--cl-primary-200);
+    --cl-ap:var(--cl-primary-200);
+    --cl-as:var(--cl-primary-200);
+    --cl-di:var(--cl-primary-200);
 
     --fs-button:1.6rem;
     --fs-header:clamp(1rem, 7vw ,2.7rem);
@@ -140,7 +140,7 @@ img,svg,video,image{
     font-weight: var(--fw-bolder);
 }
 .text-center{
-    align-items: center;
+    text-align: center;
 }
 
 
@@ -167,7 +167,7 @@ header{
 
 .main{
     background:linear-gradient(var(--cl-netrual-100) 50%, var(--cl-primary-300) 50%);
-    min-height: 90vh;
+    min-height: 90dvh;
     /* padding-block: 2rem; */
 }
 
