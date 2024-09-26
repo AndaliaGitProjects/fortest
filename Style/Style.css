@@ -20,8 +20,9 @@ THE SITE IS WORKING ON SCREEN WIDTH 250PX AND MORE
     --cl-as:var(--cl-primary-200);
     --cl-di:var(--cl-primary-200);
 
-    --fs-button:1.6rem;
+    --fs-button:1.3rem;
     --fs-header:clamp(1rem, 7vw ,2.7rem);
+    --fs-footer:1rem;
 
     --ff-main: "IBM Plex Sans Arabic", sans-serif;
 
@@ -36,6 +37,7 @@ THE SITE IS WORKING ON SCREEN WIDTH 250PX AND MORE
     }}
 @media  (width<=29rem) {
     :root{
+        --fs-footer:3vw;
         --fs-button:4vw;
         --fs-header:7vw;
     }}
@@ -270,9 +272,11 @@ a#gp:hover{
     opacity: 0.5;
     transition: translate opacity 1.5s;
 ;}
-
+footer{
+    font-size: var(--fs-footer);
+}
 footer a{
     text-decoration: none;
     color: var(--cl-primary-200);
-    font-size: 1.2rem;
+    font-size: calc(var(--fs-footer) + 0.2rem);
 }
