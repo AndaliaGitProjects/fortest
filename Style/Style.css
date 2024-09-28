@@ -1,5 +1,7 @@
 /* 
-THE SITE IS WORKING ON SCREEN WIDTH 250PX AND MORE
+responsevity: THE SITE IS WORKING ON SCREEN WIDTH 250PX AND MORE
+support_lang : rtl - ltr
+browser-support : ============= 
 */
 /* Site Setup */
 :root{
@@ -49,7 +51,7 @@ a[data-type='button']
     align-items: center;
     gap:5px;
     padding-block:10px;
-    min-width: 100px;
+    /* min-width: 100px; */
     position: relative;
 }
 a[data-type='button']:focus{
@@ -158,6 +160,7 @@ header{
 .main{
     background:linear-gradient(var(--cl-netrual-100) 50%, var(--cl-primary-300) 50%);
     min-height: 90dvh;
+    transition: all 0.5s ease-in-out;
 }
 
 .main > div{
@@ -178,7 +181,7 @@ header{
 .btn-group{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2,260px);
+    grid-template-columns: repeat(2,50%);
     gap:1.6rem;
     width: min(600px , 100%);
 }
@@ -204,13 +207,16 @@ header{
     60% {transform:translate(-5px,0);}
     100%{transform:translate(0px,0);}
 }
+
 .logo:hover{
     transform: scale(1.05);
     transition: transform .5s;
 }
+
 .logo{
     transition: transform .5s;
 }
+
 .logo-z{
     height: 100%;
     padding: .5rem 1rem;
@@ -223,6 +229,7 @@ header{
 .main h1{
     text-wrap:wrap;
 }
+
 footer{
     height: 80px;
     text-wrap:balance;
