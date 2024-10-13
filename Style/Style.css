@@ -30,7 +30,7 @@ browser-support : =============
 
 @media  (30rem <= width <=50em) {
     :root{
-        --fs-button:1.4rem;
+        --fs-button:1.25rem;
     }}
 @media  (width<=29rem) {
     :root{
@@ -184,12 +184,14 @@ header{
     grid-template-columns: repeat(2,50%);
     gap:1.6rem;
     width: min(600px , 100%);
+    word-break: break-all;
 }
 
 @media (width<=40rem){
     .btn-group{
             grid-template-columns: calc(100% - 2rem);
-            grid-template-rows: repeat(4,70px);
+            /* grid-template-rows: repeat(4,70px); */
+            grid-auto-rows: 70px;
     }
     .main>div{
         padding:1.5rem;
@@ -234,7 +236,7 @@ footer{
     height: 80px;
     text-wrap:balance;
     text-align: center;
-    padding: 2rem;
+    padding: 0rem 2rem;
 }
 a[data-type="button"]:hover{
     background-color: var(--cl-primary-200);
@@ -247,5 +249,5 @@ footer{
 footer a{
     text-decoration: none;
     color: var(--cl-primary-200);
-    font-size: calc(var(--fs-footer) + 0.2rem);
+    font-size: calc(var(--fs-footer) + 0.08rem);
 }
